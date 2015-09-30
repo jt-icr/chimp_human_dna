@@ -1,0 +1,18 @@
+#awk commands to add columns/variables to data files
+
+#add blast version
+awk '{print $0 ",2.2.25+"}' *csv
+awk '{print $0 ",2.2.27+"}' *csv
+awk '{print $0 ",2.2.30+"}' *csv
+
+#add chr/rep
+awk '{print $0 ",1"}' *csv
+awk '{print $0 ",2"}' *csv
+awk '{print $0 ",3"}' *csv
+
+#add number of seqs blasted
+awk '{print $0 ",10"}' *csv
+awk '{print $0 ",100"}' *csv
+awk '{print $0 ",1000"}' *csv
+awk '{print $0 ",10000"}' *csv
+awk '{print $0 ",100000"}' *csv
